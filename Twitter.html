@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitter </title>
+  <style>
+    /* Reset default margins and paddings */
+    body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Set a background color */
+    body {
+      background-color: #f5f8fa;
+    }
+
+    /* Container for the whole page */
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #e1e8ed;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Header */
+    .header {
+      text-align: center;
+      padding: 10px;
+      border-bottom: 1px solid #e1e8ed;
+    }
+
+    /* Main content area */
+    .content {
+      padding: 20px 0;
+    }
+
+    /* Individual tweets */
+    .tweet {
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #e1e8ed;
+      border-radius: 8px;
+      background-color: #f5f8fa;
+    }
+
+    /* User avatar */
+    .avatar {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #e1e8ed;
+      margin-right: 10px;
+      display: inline-block;
+    }
+
+    /* User name */
+    .username {
+      font-weight: bold;
+    }
+
+    /* Tweet text */
+    .tweet-text {
+      margin-top: 10px;
+    }
+    h1 {
+      color:blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>TWITTER </h1>
+    </div>
+    <div class="content">
+      <div class="tweet">
+        <div class="avatar"></div>
+        <div class="username">JohnDoe</div>
+        <div class="tweet-text">This is my first tweet!</div>
+      </div>
+      <div class="tweet">
+        <div class="avatar"></div>
+        <div class="username">JaneSmith</div>
+        <div class="tweet-text">Just had a great time at the beach! ☀️🌊</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<style>
+   
+    /*assign full width inputs*/
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+   
+    /*set a style for the buttons*/
+    button {
+        background-color: black;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 150px;
+        text-align: center;
+    }
+   
+    /* set a hover effect for the button*/
+    button:hover {
+        opacity: 0.8;
+    }
+   
+    /*set extra style for the cancel button*/
+    .cancelbtn {
+        width: auto;
+        padding: 10px 18px;
+        background-color: #f44336;
+    }
+   
+    /*centre the display image inside the container*/
+    .imgcontainer {
+        text-align: center;
+        margin: 24px 0 12px 0;
+        position: relative;
+    }
+   
+    /*set image properties*/
+    img.avatar {
+        width: 40%;
+        border-radius: 50%;
+    }
+   
+    /*set padding to the container*/
+    .container {
+        padding: 16px;
+    }
+     
+    /*set the forgot password text*/
+    span.psw {
+        float: right;
+        padding-top: 16px;
+    }
+   
+    /*set the Modal background*/
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgb(2, 0, 2);
+        background-color: rgba(2, 0, 2, 0.4);
+        padding-top: 60px;
+    }
+   
+    /*style the model content box*/
+    .modal-content {
+        background-color: white;
+        margin: 5% auto 15% auto;
+        border: 1px solid #888;
+        width: 80%;
+    }
+   
+    /*style the close button*/
+    .close {
+        position: absolute;
+        right: 25px;
+        top: 0;
+        color: #000;
+        font-size: 35px;
+        font-weight: bold;
+    }
+     
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+    }
+   
+    /* add zoom animation*/
+    .animate {
+        -webkit-animation: animatezoom 0.6s;
+        animation: animatezoom 0.6s
+    }
+     
+    @-webkit-keyframes animatezoom {
+        from {
+            -webkit-transform: scale(0)
+        }
+        to {
+            -webkit-transform: scale(1)
+        }
+    }
+     
+    @keyframes animatezoom {
+        from {
+            transform: scale(0)
+        }
+        to {
+            transform: scale(1)
+        }
+    }
+     
+    @media screen and (max-width: 300px) {
+        span.psw {
+            display: block;
+            float: none;
+        }
+        .cancelbtn {
+            width: 100%;
+        }
+    h2 {
+      color:blue;
+    }
+</style>
+ 
+<body>
+ 
+    <h2>WELCOME TO TWITTER! CLICK TO LOG IN</h2>
+    <!--Step 1 : Adding HTML-->
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+ 
+    <div id="id01" class="modal">
+ 
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+              <div class="container">
+          <metacharset="UTF-8"> 
+          <title>Div Backround Image</title>
+          <style>
+             .box{ 
+             height:40px; 
+             width:40px; 
+             padding:40px; 
+             margin:30px auto; 
+             box-shadow: 20px 20px 20px 20px;
+             border: 10px solid yellow 
+             font-family: sans-serif; 
+             text-align:center; 
+             color: lightblue; 
+             background-image:url(Aly.jpg); 
+             background-size: cover; 
+             } 
+             </style> 
+             </head> 
+             <body> 
+             <div class="box">
+             </div>
+ 
+            <div class="container">
+                <label><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+ 
+                <label><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+ 
+                <button type="submit">Login</button>
+                <input type="checkbox" checked="checked"> Remember me
+            </div>
+ 
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+            </div>
+        </form>
+    </div>
+ 
+    <script>
+        var modal = document.getElementById('id01');
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+ 
+</html>
